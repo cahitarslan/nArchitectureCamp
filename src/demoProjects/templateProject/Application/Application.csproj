@@ -7,8 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Features\someFeature\Models\" />
-    <Folder Include="Features\someFeature\Queries\" />
+    <Compile Remove="Features\someFeature\Models\**" />
+    <Compile Remove="Features\someFeature\Queries\**" />
+    <EmbeddedResource Remove="Features\someFeature\Models\**" />
+    <EmbeddedResource Remove="Features\someFeature\Queries\**" />
+    <None Remove="Features\someFeature\Models\**" />
+    <None Remove="Features\someFeature\Queries\**" />
   </ItemGroup>
 
   <ItemGroup>
